@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Canvas в HTML5</title>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="700" height="400"
+            style="background-color:#eee; border:1px solid #ccc;">
+            Ваш браузер не поддерживает Canvas
+        </canvas>
+        <script>
+     var canvas = document.getElementById("myCanvas"), 
+	                 context = canvas.getContext("2d");
+					 
+	        context.beginPath();
+            context.arc(160, 90, 50, 5.5*Math.PI, 2.5* Math.PI, false);
+            context.moveTo(162, 140);
+            context.lineTo(162, 42);
+            context.stroke();
+	 
+	        context.beginPath();
+            context.moveTo(230, 140);
+            context.lineTo(262, 42);
+			
+			context.moveTo(300, 140);
+            context.lineTo(262, 42);
+			
+			context.moveTo(284, 100);
+            context.lineTo(243, 100);
+			
+			context.beginPath();
+            context.moveTo(230, 140);
+            context.lineTo(262, 42);
+			
+			context.moveTo(300, 140);
+            context.lineTo(262, 42);
+			
+			context.moveTo(284, 100);
+            context.lineTo(243, 100);
+            context.stroke();
+			
+			
+						context.beginPath();
+            context.moveTo(325, 140);
+            context.lineTo(352, 42);
+			
+            context.moveTo(300, 42);
+            context.lineTo(353, 42);
+			
+			context.moveTo(325, 140);
+			context.lineTo(380, 140);
+
+
+            context.stroke();
+
+
+        </script>
+    </body>
+</html>
